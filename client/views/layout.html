@@ -41,19 +41,21 @@
     </div>
   </div>
 </nav>
-
-<div class="row">
-	<div class="col-lg-3">
-		<div class="btn-group-vertical">
-		    <a href="#" class="btn btn-default">Button</a>
-		    <a href="#" class="btn btn-default">Button</a>
-		    <a href="#" class="btn btn-default">Button</a>
-		    <a href="#" class="btn btn-default">Button</a>
+<main>
+	<div class="row main-wrapper">
+		<div class="col-lg-2 sidebar">
+			<ul>
+				<li>Human Resources</li>
+				<li>Recruitment</li>
+				<li>Expenses</li>
+				<li>Appraisal</li>
+				<li>Configuration</li>
+			</ul>
+		</div>
+		<div class="col-lg-10">
+			{{> yield}}
 		</div>
 	</div>
-	<div class="col-lg-9">
-		{{> yield}}
-	</div>
-</div> 
+</main> 
 
 </template>
