@@ -1,6 +1,6 @@
 <template name="layout">
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,23 +42,18 @@
   </div>
 </nav>
 
-
-<div class="sidebar-nav">
-    <div class="" style="width:300px; padding: 8px 0;height: 100vh; background-color: #5AA6D6">
-		<ul class="nav nav-list"> 
-		  <li class="nav-header">Admin Menu</li>        
-		  <li><a href="index"><i class="icon-home"></i> Dashboard</a></li>
-          <li><a href="#"><i class="icon-envelope"></i> Messages <span class="badge badge-info">4</span></a></li>
-          <li><a href="#"><i class="icon-comment"></i> Comments <span class="badge badge-info">10</span></a></li>
-		  <li class="active"><a href="#"><i class="icon-user"></i> Members</a></li>
-          <li class="divider"></li>
-		  <li><a href="#"><i class="icon-comment"></i> Settings</a></li>
-		  <li><a href="#"><i class="icon-share"></i> Logout</a></li>
-		</ul>
+<div class="row">
+	<div class="col-lg-3">
+		<div class="btn-group-vertical">
+		    <a href="#" class="btn btn-default">Button</a>
+		    <a href="#" class="btn btn-default">Button</a>
+		    <a href="#" class="btn btn-default">Button</a>
+		    <a href="#" class="btn btn-default">Button</a>
+		</div>
 	</div>
-</div>
-
-{{> yield}}
-
+	<div class="col-lg-9">
+		{{> yield}}
+	</div>
+</div> 
 
 </template>
