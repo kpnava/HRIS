@@ -1,15 +1,104 @@
 html,body,main{
 	height:100%;
+	overflow:hidden;
 }
 .row{
 	padding: 0px;
 	margin: 0px;
 }
-.sidebar{
+.panel-sidebar{
 	background-color: gainsboro;
 	height:100%;
-	margin-top:-22px;
+	top:63px;
+	width:250px;
+	position:fixed;
+	padding-top:90px;
+}
+.panel-sidebar a{
+	color:dimgray;
+	display:block;
+	height:100%;
+	width:100%;
+	padding:3px 0px;
+	margin-left:-40px;
+	text-indent:40px;
+}
+.panel-sidebar a:hover{
+	background:rgba(250,250,250,0.7);
+	text-decoration: none;
+}
+.panel-sidebar>ul{
+	list-style: none;
+	margin-left:-10px;
+}
+.panel-sidebar>ul>li{
+	font-size:15px;
+	font-weight:bold;
+}
+.panel-sidebar>ul>li>ul{
+	font-weight:normal;	
+	list-style: none;
+	margin-left:-30px;
+}
+.panel-sidebar>ul>li>ul>li{
+	margin-right:-40px;
+}
+.panel-body{
+	height:100%;
+	width:calc(100% - 250px);
+	margin:0; padding:0;
+	position: absolute;
+	top:63px;right:0;
+
+}
+.title-bar{
+	border-bottom:1px solid gainsboro;
+	text-indent:30px;
+	background:rgb(250,250,250);
+	height:120px;
+	width:100%;
+	position: absolute;
+	top:0;
+}
+.title-bar h5{
+	margin-top:-15px;
+	margin-left:2px;
 }
 .main-wrapper{
 	height:100%;
+}
+.main-body{
+	margin:0;
+	margin-top:120px;
+	height: calc(100% - 183px);
+	width:100%;
+	overflow: auto;
+}
+.main-body>div{
+	height:1000px;
+}
+.logo{
+	position:absolute;
+	top:20px;
+	left:30px;
+}
+.page-title{
+	padding:10px;
+	border-bottom:1px solid gainsboro;
+	overflow:hidden;
+}
+.page-title .title{
+	font-size:25px;
+}
+.expense-item{
+	background:rgb(250,250,250);
+	padding:10px;
+	min-height:85px;
+	width:300px;
+	float:left;
+	margin:15px 0px 0px 15px;
+
+}
+.expense-item .title{
+	font-size:17px;
 }

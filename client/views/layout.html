@@ -9,51 +9,67 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">DataGen HRIS</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="float:right;">
+      
+      <form class="navbar-form navbar-left" role="search" >
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-      </ul>
     </div>
   </div>
 </nav>
 <main>
-	<div class="row main-wrapper">
-		<div class="col-lg-2 sidebar">
+	<div class="main-wrapper">
+		<div class="panel-sidebar">
+		<div class="logo"><img src="/images/logo.png"></div>
 			<ul>
-				<li>Human Resources</li>
-				<li>Recruitment</li>
-				<li>Expenses</li>
-				<li>Appraisal</li>
-				<li>Configuration</li>
+				<li>
+					Human Resources
+					<ul><li><a href="view-employees-kanban">Employees</a></li></ul>
+				</li>
+				<li>
+					Recruitment
+					<ul>
+						<li><a href="#">Job Positions</a></li>
+						<li><a href="#">Applications</a></li> 
+					</ul>
+				</li>
+				<li>
+					Expenses
+					<ul><li><a href="/expenses">Expenses</a></li></ul>
+				</li>
+				<li>
+					Appraisal
+					<ul>
+						<li><a href="/appraisal">Appraisals</a></li>
+						<li><a href="/interview-request">Interview Requests</a></li>
+					</ul>
+				</li>
+				<li>
+					Configuration
+					<ul>
+						<li><a href="/employee-tags">Employee Tags</a></li>
+						<li><a href="/departments">Departments</a></li>
+						<li><a href="/expense-categories">Expense Categories</a></li>
+						<li><a href="/appraisal-plans">Aprraisal Plans</a></li>
+						<li><a href="#">Recruitment</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
-		<div class="col-lg-10">
-			{{> yield}}
+		<div class="panel-body">
+			<div class="title-bar">
+				<h2>HRIS</h2>
+				<h5>Human Resource Information System</h5>
+			</div>
+			<div class="main-body">
+				<div>{{> yield}}</div>
+			</div>
 		</div>
 	</div>
 </main> 
