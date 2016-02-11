@@ -1,0 +1,23 @@
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.navcustom{
+	margin-bottom: 20px;
+}
+.nav > li > button {
+	margin-top: 18px;
+}
+.profile-pic{
+	float: left;
+}
+.profile-pic > img {
+	width: 80px;
+	height: 80px;
+}
+.emp-detail{
+	margin: 10px;
+}
+.details{
+	line-height: 1px;
+}

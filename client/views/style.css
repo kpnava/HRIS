@@ -6,49 +6,49 @@ html,body,main{
 	padding: 0px;
 	margin: 0px;
 }
-.panel-sidebar{
+.panel-sidebar-1{
 	background-color: gainsboro;
 	height:100%;
-	top:63px;
+	top:0px;
 	width:250px;
 	position:fixed;
 	padding-top:90px;
 }
-.panel-sidebar a{
+.panel-sidebar-1 a{
 	color:dimgray;
 	display:block;
 	height:100%;
 	width:100%;
-	padding:3px 0px;
+	padding:5px 0px;
 	margin-left:-40px;
-	text-indent:40px;
+	text-indent:50px;
 }
-.panel-sidebar a:hover{
+.panel-sidebar-1 a:hover{
 	background:rgba(250,250,250,0.7);
 	text-decoration: none;
 }
-.panel-sidebar>ul{
+.panel-sidebar-1>ul{
 	list-style: none;
 	margin-left:-10px;
 }
-.panel-sidebar>ul>li{
+.panel-sidebar-1>ul>li{
 	font-size:15px;
 	font-weight:bold;
 }
-.panel-sidebar>ul>li>ul{
+.panel-sidebar-1>ul>li>ul{
 	font-weight:normal;	
 	list-style: none;
 	margin-left:-30px;
 }
-.panel-sidebar>ul>li>ul>li{
+.panel-sidebar-1>ul>li>ul>li{
 	margin-right:-40px;
 }
-.panel-body{
+.panel-body-1{
 	height:100%;
 	width:calc(100% - 250px);
 	margin:0; padding:0;
 	position: absolute;
-	top:63px;right:0;
+	top:0;right:0;
 
 }
 .title-bar{
@@ -101,4 +101,8 @@ html,body,main{
 }
 .expense-item .title{
 	font-size:17px;
+}
+
+.no-padding {
+	padding: 0px;
 }

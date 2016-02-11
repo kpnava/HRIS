@@ -1,0 +1,9 @@
+.application-column-fixed{
+	width: 300px;
+}
+.application-coloumn-flex{
+	flex-grow: 1;
+}
+.application-container{
+	display: flex;
+}

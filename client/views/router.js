@@ -1,7 +1,7 @@
-Router.route('/view-employees-kanban', function(){
+Router.route('/', function(){
 	this.layout('layout'),
 
-	this.render('view_employees_kanban')
+	this.render('view_employees')
 })
 
 Router.route('/expenses', function(){
@@ -44,4 +44,41 @@ Router.route('/expense-categories', function(){
 	this.layout('layout'),
 
 	this.render('expense-categories')
+})
+
+Router.route('/view-employees', function(){
+	this.layout('layout'),
+
+	this.render('view_employees')
+})
+
+Router.route('/view-positions', function(){
+	this.layout('layout'),
+
+	this.render('view_job_positions')
+})
+
+Router.route('/view-applications', function(){
+	this.layout('layout'),
+
+	this.render('view_applications')
+})
+
+Router.route('/view-stages', function(){
+	this.layout('layout'),
+
+	this.render('stages')
+})
+
+
+Router.route('/view-degrees', function(){
+	this.layout('layout'),
+
+	this.render('degrees')
+})
+
+Router.route('/view-source-applicants', function(){
+	this.layout('layout'),
+
+	this.render('source')
 })
