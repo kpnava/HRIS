@@ -1,0 +1,203 @@
+<template name="create_employee">
+<nav class="navbar navbar-default navcustom">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Create Employee</a>
+	    </div>
+	     <ul class="nav navbar-nav">
+	        <li><button class="btn btn-danger btn-sm" onclick="Router.go('view-employees')">Save</button></li>
+	        <li><button class="btn btn-default btn-sm" onclick="Router.go('view-employees')">Discard</button></li>
+	      </ul>
+	  </div>
+	</nav>
+
+
+	<div class="row">
+
+		<div class="col-lg-10 col-lg-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="col-lg-3" >
+						<img src="/images/camera.jpg" style="height: 150px; width: 150px; margin: 0 auto;display: block" />
+					</div>
+					<div class="col-lg-8">
+						<div class="form-group">
+							Name:
+							<input type="text" class="form-control" placeholder="Name" />
+						</div>
+						<div class="form-group">
+							Tags:
+							<input type="text" class="form-control input-sm" placeholder="e.g. Part Time" />
+						</div>
+						<div class="form-group">
+							Work Email:
+							<input type="text" class="form-control input-sm" placeholder="Work Email" />
+						</div>
+						<div class="form-group">
+							Work Phone:
+							<input type="text" class="form-control input-sm" placeholder="Work Phone" />
+						</div>
+					</div>
+					<div class="col-lg-1">
+						<a href="/appraisal-plans" class="label label-primary">0 Appraisals</a>
+					</div>
+
+					<div class="col-lg-12">
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href="#pubInfo" data-toggle="tab">Public Information</a></li>
+						  <li><a href="#perInfo" data-toggle="tab">Personal Information</a></li>
+						  <li><a href="#settings" data-toggle="tab">HR Settings</a></li>
+						</ul>
+						<div id="myTabContent" class="tab-content">
+						  <div class="tab-pane fade active in" id="pubInfo">
+						    <div class="col-lg-6">
+						    	<h5>Contact Information</h5>
+						    	<div class="form-group">
+									Working Address:
+						    		<input type="text" class="form-control input-sm" placeholder="Working Address" />
+						    	</div>
+						    	<div class="form-group">
+									Work Mobile:
+						    		<input type="text" class="form-control input-sm" placeholder="Work Mobile" />
+						    	</div>
+						    	<div class="form-group">
+									Office Location:
+						    		<input type="text" class="form-control input-sm" placeholder="Office Location" />
+						    	</div>
+						    	<div class="form-group">
+									Related User:
+						    		<select class="form-control input-sm"></select>
+						    	</div>
+						    </div>
+						    <div class="col-lg-6">
+						    	<h5>Position</h5>
+						    	<div class="form-group">
+									Department:
+						    		<select class="form-control input-sm"></select>
+						    	</div>
+						    	<div class="form-group">
+									Job Title:
+						    		<select class="form-control input-sm"></select>
+						    	</div>
+						    	<div class="form-group">
+									Manager:
+						    		<select class="form-control input-sm"></select>
+						    	</div>
+						    	<div class="form-group">
+									Coach:
+						    		<select class="form-control input-sm"></select>
+						    	</div>
+						    </div>
+						    <div class="col-lg-12">
+						    	<textarea name="otherInfo" id="" cols="30" rows="5" class="form-control" placeholder="Other Information"></textarea>
+						    </div>
+						  </div>
+						  <div class="tab-pane fade" id="perInfo">
+						  	<div class="row">
+						  		<div class="col-lg-6">
+							    	<h5>Citezenship & Other Info</h5>
+							    	<div class="form-group">
+										Nationality:
+							    		<select class="form-control input-sm"></select>
+							    	</div>
+							    	<div class="form-group">
+										Identification No:
+							    		<input type="text" class="form-control input-sm" placeholder="Identification No" />
+							    	</div>
+							    	<div class="form-group">
+										Passport No:
+							    		<input type="text" class="form-control input-sm" placeholder="Passport No" />
+							    	</div>
+							    	<div class="form-group">
+										Bank Account No:
+										<select class="form-control input-sm"></select>
+							    	</div>
+							    	<div class="form-group">
+										Other Id:
+							    		<input type="text" class="form-control input-sm" placeholder="Other Id" />
+							    	</div>
+							    </div>
+							    <div class="col-lg-6">
+							    	<h5>Contact Information</h5>
+							    	<div class="form-group">
+										Home Address:
+							    		<select class="form-control input-sm"></select>
+							    	</div>
+							    </div>
+						  	</div>
+						   	<div class="row">
+							   	<div class="col-lg-6">
+							    	<h5>Status</h5>
+							    	<div class="form-group">
+										Gender:
+							    		<select class="form-control input-sm">
+							    			<option value="Male">Male</option>
+							    			<option value="Female">Female</option>
+							    		</select>
+							    	</div>
+							    	<div class="form-group">
+										Marital Status:
+							    		<select class="form-control input-sm">
+							    			<option value="Single">Single</option>
+							    			<option value="Married">Married</option>
+							    			<option value="Widower">Widower</option>
+							    			<option value="Divorce">Divorce</option>
+							    		</select>
+							    	</div>
+							    </div>
+							    <div class="col-lg-6">
+							    	<h5>Birth</h5>
+							    	<div class="form-group">
+										Date of Birth:
+							    		<input type="Date" class="form-control input-sm" />
+							    	</div>
+							    	<div class="form-group">
+										Marital Status:
+							    		<select class="form-control input-sm">
+							    			<option value="Single">Single</option>
+							    			<option value="Married">Married</option>
+							    			<option value="Widower">Widower</option>
+							    			<option value="Divorce">Divorce</option>
+							    		</select>
+							    	</div>
+							    </div>
+						   	</div>
+						  </div>
+						  <div class="tab-pane fade" id="settings">
+						    <div class="col-lg-6">
+						    	<h5>Appraisals</h5>
+						    	<div class="form-group">
+									Appraisal Plan:
+						    		<select class="form-control input-sm">
+						    		</select>
+						    	</div>
+						    	<div class="form-group">
+									Next Appraisal Date:
+						    		<select class="form-control input-sm">
+						    		</select>
+						    	</div>
+						    </div>
+						     <div class="col-lg-6">
+						    	<h5>Active</h5>
+						    	<div class="form-group form-inline">
+									Active:
+						    		 <div class="checkbox">
+							          <label>
+							            <input type="checkbox">
+							          </label>
+							        </div>
+						    	</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</div>
+
+		
+		
+
+	</div>
+</template>

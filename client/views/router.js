@@ -82,3 +82,15 @@ Router.route('/view-source-applicants', function(){
 
 	this.render('source')
 })
+
+Router.route('/create-employee', function(){
+	this.layout('layout'),
+
+	this.render('create_employee')
+})
+
+Router.route('/create-position', function(){
+	this.layout('layout'),
+
+	this.render('create_position')
+})

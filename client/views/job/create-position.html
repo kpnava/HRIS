@@ -1,0 +1,75 @@
+<template name="create_position">
+<nav class="navbar navbar-default navcustom">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Create Job Position</a>
+	    </div>
+	     <ul class="nav navbar-nav">
+	        <li><button class="btn btn-danger btn-sm" onclick="Router.go('view-positions')">Save</button></li>
+	        <li><button class="btn btn-default btn-sm" onclick="Router.go('view-positions')">Discard</button></li>
+	        
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><button class="btn btn-success btn-sm">Launch Recruitment</button></li>
+	      </ul>
+	  </div>
+	</nav>
+
+
+	<div class="row">
+
+		<div class="col-lg-10 col-lg-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="col-lg-8">
+						<div class="form-group">
+							Job Position:
+							<input type="text" class="form-control" placeholder="Name" />
+						</div>
+						<div class="form-group">
+							Department:
+							<select name="department" id="departmentCtrl" class="form-control input-sm"></select>
+						</div>
+						<div class="form-group">
+							Recruitment Responsible:
+							<select name="responsible" id="responsibleCtrl" class="form-control input-sm"></select>
+						</div>
+						<div class="form-group">
+							Current Number of Employees: <span class="label label-default">0</span>
+							<div class="input-group">
+								<input type="number" class="form-control input-sm text-right" />
+								<span class="input-group-addon">new employee(s) expected.</span>
+							</div>
+						</div>
+						<div class="form-group">
+							Interview Form:
+							<select name="interviewForm" id="interviewFormCtrl" class="form-control input-sm"></select>
+						</div>
+						<div class="form-group">
+							Job Location:
+							<div class="input-group">
+								<select name="jobLocation" id="jobLocationCtrl" class="form-control input-sm"></select>
+								<span class="input-group-addon">(empty = remote work)</span>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<select name="published" id="publishedCtrl" class="form-control input-sm">
+								<option value="Not Published">Not Published</option>
+								<option value="Website">Website</option>
+							</select>
+						</div>
+						<a href="/appraisal-plans" class="label label-primary">0 Applicants</a>
+						<a href="/appraisal-plans" class="label label-primary">0 Documents</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+
+	</div>
+</template>
